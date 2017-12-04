@@ -1,0 +1,70 @@
+<% include ../partials/header %> 
+
+<div class="team_work_agile">
+  <h4 >Whether we play a large or small role, by working together we achieve our objectives.</h4>
+</div>
+<br>
+<div class="container-index">
+ <div class="text-center">
+  <h3 class="tittle">Available Jobs </h3>
+</div>
+
+
+            <!--  <h1>LOWONGAN KERJA</h1>
+          -->
+          <div class="container">
+           <p class="text-right">
+            <a class="btn btn-primary btn-lg" href="/campgrounds/new">Add New Loker!</a>
+          </p>
+        </div>
+
+            <!--   <form action="/campgrounds" method="GET" class="form-inline" id="campground-search">
+                <div class="form-groupindex">
+                  <input type="text" name="search" placeholder="Search Loker here" class="form-control">
+                </div>
+              </form> -->
+
+            </div>
+          </header>
+
+    <!--  <div class="row text-center flex-wrap" id="campground-grid">
+        <% campgrounds.forEach(function(campground){ %>
+            <div class="col-md-4 col-sm-8">
+                <div class="thumbnail">
+                   <img src="<%= campground.image %>">
+                   <div class="caption">
+                       <h4><%= campground.name %></h4>
+                   </div>
+                   <p>
+                       <a href="/campgrounds/<%= campground._id %>" class="btn btn-primary">More Info</a>
+                   </p>
+                </div>
+            </div>
+        <% }); %>
+      </div> -->
+      <div class="container">
+        <ul id="myTab" class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">JOBS</a></li>
+
+
+        </ul>
+        <div class="row text-center flex-wrap" id="campground-grid">
+          <% campgrounds.forEach(function(campground){ %>
+          <div class="tab_grid">
+            <div class="col-sm-3 loc_1">
+
+
+              <a href="/campgrounds/<%= campground._id %>"><img src="<%= campground.image %>" alt="" style="width: 100%;margin-right:100%;"></a>
+            </div>
+
+            <div class="col-md-9 location_box1">
+              <h4 class="col-xs-12" align="left"><a href="/campgrounds/<%= campground._id %>"><%= campground.name %> </a></h4>
+              <p align="left" class="col-sm-12">Location : <%= campground.location %></p>
+
+              </div>
+            </div>
+            <% }); %>
+          </div>
+        </div>
+
+        <% include ../partials/footer %>

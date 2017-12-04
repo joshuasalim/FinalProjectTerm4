@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Eagle Eye Job</title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<link rel="stylesheet" type='text/css' href="css/bootstrap.min.css">
+	 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" >
+	<link rel="stylesheet" type='text/css' href="css/animate.min.css">
+
+	<link rel="stylesheet" type='text/css' href="css/font-awesome.min.css">
+	<link rel="stylesheet" type='text/css' href="css/nivo-lightbox.css">
+	<link rel="stylesheet" type='text/css' href="css/nivo_themes/default/default.css">
+	<link rel="stylesheet" type='text/css' href="css/style.css">
+	<!-- <link rel="stylesheet" type='text/css' href="css/style (2).css"> -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+	
+
+</head>
+<body>
+
+
+<section class="preloader">
+	<div class="sk-spinner sk-spinner-pulse"></div>
+</section>
+
+
+<section class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+			<a href="/home" class="navbar-brand">Eagle Eye Job</a>
+		</div>
+		<!-- <div class="collapse navbar-collapse"> -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<nav class="link-effect-2" id="link-effect-2">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#home" class="smoothScroll">HOME</a></li>
+				<li><a href="/campgrounds">JOBS</a></li>
+				<!-- <li class="dropdown">
+									<a href="##" class="dropdown-toggle effect-3" data-toggle="dropdown">JOBS <b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="/campgrounds">Available Jobs</a></li>
+										<li class="divider"></li>
+										<li><a href="/campgrounds/new">Add New Jobs</a></li>
+										
+									</ul>
+								</li> -->
+				<li><a href="#menu" class="smoothScroll">ABOUT US</a></li>
+				<li><a href="#team" class="smoothScroll">TEAM</a></li>
+				<li><a href="#contact" class="smoothScroll">CONTACT</a></li>
+				 <% if(!currentUser){ %>
+                    <li class="<%= typeof page !== 'undefined' && page === 'login' ? 'active' : '' %>"><a href="/login">LOGIN</a></li>
+                    <li class="<%= typeof page !== 'undefined' && page === 'register' ? 'active' : '' %>"><a href="/register">SIGN UP</a></li>
+                <% } else { %>
+                    <li><a href="#">HELLO <%= currentUser.username %></a></li>
+                    <li><a href="/logout">LOGOUT</a></li>
+                <% } %>
+			</ul>
+		</div>
+		</nav>
+	</div>
+</section>
+
+
+
+<section id="home" class="parallax-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<h1 fontcolor>EAGLE EYE JOB</h1>
+				<h2>Now Everyone Can Have A Job</h2>
+				<a href="#gallery" class="smoothScroll btn btn-default">SEE MORE</a>
+			</div>
+		</div>
+	</div>		
+
+</section>
+
+
+
+<section id="gallery" class="parallax-section">
+	
+		<div class="row">
+		<div class="services" id="services">
+		<div class="container">
+		
+			<div class="col-md-offset-2 col-md-8 col-sm-12 text-center">
+				<h1 class="heading">SELECTION PROCESS</h1>
+
+				<hr>
+				<br>
+			</div>
+			<div class="inner_sec_grids_info_w3ls">
+				<div class="col-md-3 services-left">
+					<div class="services-left-top">
+
+						<h5>Identify Need & Develop Position Description</h5>
+
+					</div>
+					<div class="services-left-top services-left-top1">
+
+						<h5>Recruitment Planning</h5>
+
+					</div>
+				</div>
+				<div class="col-md-6 services-middle">
+					<div class="services-middle-img">
+						<img src="images/process.jpg" alt="" />
+					</div>
+					<div class="services-middle-grids">
+						<div class="col-md-6 services-middle-left">
+							<div class="services-left-top">
+
+								<h5>Sourcing & Advertising</h5>
+
+							</div>
+						</div>
+						<div class="col-md-6 services-middle-left">
+							<div class="services-left-top">
+
+								<h5>Assess & Interview Candidates</h5>
+
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<div class="col-md-3 services-left">
+					<div class="services-left-top">
+
+						<h5>Offer for Student Employment</h5>
+
+					</div>
+					<div class="services-left-top services-left-top1">
+
+						<h5>Onboarding for Success</h5>
+
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+		</div>
+	
+</section>
+
+
+
+<section id="menu" class="parallax-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-2 col-md-8 col-sm-12 text-center">
+				<h1 class="heading">ABOUT US</h1>
+				<hr>
+			</div>
+			<div class="banner-bottom">
+		<div class="container">
+			
+			<div class="inner_sec_grids_info_w3ls">
+				<div class="col-md-6 banner_bottom_left">
+					<h4>Employment opportunities for <span>Professionals</span></h4>
+					<p>Pellentesque convallis diam consequat magna vulputate malesuada. Cras a ornare elit. Nulla viverra pharetra sem, eget
+						pulvinar neque pharetra ac.</p>
+					<p>Lorem Ipsum convallis diam consequat magna vulputate malesuada. Cras a ornare elit. Nulla viverra pharetra sem, eget
+						pulvinar neque pharetra ac.</p>
+					<ul class="some_agile_facts">
+						<li><span class="fa fa-briefcase" aria-hidden="true"></span><label>80</label> Corporate Programs</li>
+						<li><span class="fa fa-graduation-cap" aria-hidden="true"></span><label>49</label> Training Courses</li>
+						<li><span class="fa fa-user" aria-hidden="true"></span><label>88</label> Strategic Partners</li>
+						<li><span class="fa fa-line-chart" aria-hidden="true"></span><label>436</label> Companies We Helped</li>
+					</ul>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-6 banner_bottom_right">
+					<div class="agileits_w3layouts_banner_bottom_grid">
+						<img src="images/ab.png" alt=" " class="img-responsive" />
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+
+		</div>
+	</div>
+
+
+		</div>
+	</div>
+</section>		
+
+
+
+
+
+
+
+<section id="team" class="parallax-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-2 col-md-8 col-sm-12 text-center">
+				<h1 class="heading">Meet Our Team</h1>
+				<hr>
+			</div>
+			<div class="col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.3s">
+				<img src="images/Untitled-1 copy.jpg" class="img-responsive center-block" alt="team img">
+				<h4>Joshua Salim</h4>
+				<h3>Project Manager</h3>
+			</div>
+			<div class="col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.6s">
+				<img src="images/team22.jpg" class="img-responsive center-block" alt="team img">
+				<h4>Jeffrey Anderson</h4>
+				<h3>Pasta Specialist</h3>
+			</div>
+			<div class="col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.9s">
+				<img src="images/team33.jpg" class="img-responsive center-block" alt="team img">
+				<h4>Rico Cahyadi</h4>
+				<h3>Baker</h3>
+			</div>
+			<div class="col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.9s">
+				<img src="images/team33.jpg" class="img-responsive center-block" alt="team img">
+				<h4>William</h4>
+				<h3>Baker</h3>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<!-- <section id="contac" class="parallax-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-1 col-md-10 col-sm-12 text-center">
+				<h1 class="heading">Contact Us</h1>
+				<hr>
+			</div>
+			<div class="col-md-offset-1 col-md-10 col-sm-12 wow fadeIn" data-wow-delay="0.9s">
+				<form action="#" method="post">
+					<div class="col-md-6 col-sm-6">
+						<input name="name" type="text" class="form-control" id="name" placeholder="Name">
+				  </div>
+					<div class="col-md-6 col-sm-6">
+						<input name="email" type="email" class="form-control" id="email" placeholder="Email">
+				  </div>
+					<div class="col-md-12 col-sm-12">
+						<textarea name="message" rows="8" class="form-control" id="message" placeholder="Message"></textarea>
+					</div>
+					<div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
+						<input name="submit" type="submit" class="form-control" id="submit" value="make a reservation">
+					</div>
+				</form>
+			</div>
+			<div class="col-md-2 col-sm-1"></div>
+		</div>
+	</div>
+</section> -->
+
+
+<section id="contact">
+<footer class="parallax-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
+				<h2 class="heading">Contact Info.</h2>
+				<div class="ph">
+					<p><i class="fa fa-phone"></i> Phone</p>
+					<h4>061-465-9873</h4>
+				</div>
+				<div class="address">
+					<p><i class="fa fa-map-marker"></i> Our Location</p>
+					<h4>Dagan 10/1M, Medan, Indonesia</h4>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
+				<h2 class="heading">Open Hours</h2>
+					<p>Sunday <span>10:30 AM - 10:00 PM</span></p>
+					<p>Mon-Fri <span>9:00 AM - 8:00 PM</span></p>
+					<p>Saturday <span>11:30 AM - 10:00 PM</span></p>
+			</div>
+			<div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
+				<h2 class="heading">Follow Us</h2>
+				<ul class="social-icon">
+					<li><a href="#" class="fa fa-facebook wow bounceIn" data-wow-delay="0.3s"></a></li>
+					<li><a href="#" class="fa fa-twitter wow bounceIn" data-wow-delay="0.6s"></a></li>
+					<li><a href="#" class="fa fa-behance wow bounceIn" data-wow-delay="0.9s"></a></li>
+					<li><a href="#" class="fa fa-dribbble wow bounceIn" data-wow-delay="0.9s"></a></li>
+					<li><a href="#" class="fa fa-github wow bounceIn" data-wow-delay="0.9s"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+</section>
+
+
+
+<section id="copyright">
+	<div class="container">
+		<div class="row">
+			
+            <p class="text-muted">&copy; Eagle Eye Job | <a href="/home">Home</a> | <a href="/home#contact">Contact</a></p>
+          
+		</div>
+	</div>
+</section>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/nivo-lightbox.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,275 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+.fa{
+  width: 50%;
+  height: 50%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 60%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.footer.footer{
+    position: absolute;
+  bottom: 0;
+  width: 60%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.btn-primary{
+  border-radius:2px;
+  background:#6caee0;
+  color:#ffffff;
+  font-weight:bold;
+  box-shadow:1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+  padding:14px 22px;
+  border:0;
+  margin:0 auto;
+  outline:none;
+}
+
+.dropdown-toogle{
+  margin: 0,auto;
+}
+
+.navbar{
+   border:6px;
+  margin:2px;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+  background-color: #FFFAFA;
+  margin: 0 auto;
+}
+.carousel-indicators.second .active {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  background-color: #0f0f10;
+}
+
+
+.container{
+  padding-top: 10px;
+}
+
+.jumbotron{
+margin: 10px;
+padding-top: 12px;
+padding-bottom: 10px;
+
+}
+h3.tittle {
+  color: #262c38;
+  margin: 10;
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.33);
+}
+
+
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.container-center{
+   border:6px;
+  margin:2px;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+}
+
+.caption{
+  border:6px;
+  margin:2px;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+  background-color: #f5f5f5;
+  margin: 0 auto;
+}
+
+.row{
+  border:6px;
+  margin:50px;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+  background-color: #F5F5DC;
+  padding-bottom: 0px;
+  padding-top: 20px;
+}
+.tab_grid {
+  margin: 3em 0;
+}
+
+.team_work_agile {
+  padding : 100px ;
+  background: -webkit-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/banner1.jpg) no-repeat;
+  background: -moz-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/banner1.jpg) no-repeat;
+  background: -ms-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/banner1.jpg) no-repeat;
+  background: linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/banner1.jpg) no-repeat;
+  background-size: cover;
+  min-height: 350px;
+}
+
+.team_work_agile h4 {
+  color: #fff;
+  font-size: 2.2em;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin: 0 auto;
+  width: 62%;
+  text-align: center;
+  line-height: 1.8em;
+  padding-top: 3em;
+}
+
+@media(max-width:1080px) {
+  .team_work_agile h4 {
+    font-size: 2em;
+    width: 85%;
+    text-align: center;
+    line-height: 1.8em;
+    padding-top: 3.5em;
+  }
+}
+  @media(max-width:991px) {
+    .team_work_agile h4 {
+    font-size: 2em;
+    width: 75%;
+    line-height: 1.8em;
+    padding-top: 3em;
+  }
+}
+@media(max-width:767px) {
+  .team_work_agile h4 {
+    font-size: 1.6em;
+    width: 75%;
+    line-height: 1.8em;
+    padding-top: 3em;
+  }
+  .team_work_agile {
+    min-height: 290px;
+  }
+  }
+@media(max-width:600px) {
+.team_work_agile h4 {
+    font-size: 1.4em;
+    width: 80%;
+  }
+  .team_work_agile {
+    min-height: 250px;
+  }
+}
+@media(max-width:568px) {
+  .team_work_agile h4 {
+    font-size: 1.4em;
+    width: 90%;
+  }
+  }
+  @media(max-width:480px) {
+  .team_work_agile h4 {
+    font-size: 1.4em;
+    width: 90%;
+  }
+}
+
+@media(max-width:440px) {
+  .team_work_agile h4 {
+    font-size: 1.2em;
+    width: 90%;
+    padding-top: 2.6em;
+  }
+  .team_work_agile {
+    min-height: 205px;
+  }
+  }
+  @media(max-width:375px) {
+    .team_work_agile h4 {
+    font-size: 1.1em;
+    width: 90%;
+    padding-top: 2.6em;
+  }
+}
+
+.well{
+    border:6px;
+  margin:2px;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+  background-color: #f5f5f5;
+}
+
+.delete-form{
+   box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+   border:6px;
+}
+
+.edit-form{
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+   border:6px;
+}
+
+.rowlogin{
+  border:6px;
+  margin:10px;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+  background-color: #f5f5f5;
+  padding-bottom: 0px;
+}
+
+.flex-wrap {
+   border:6px;
+  margin:2px;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+
+}
+
+/* Thumbnail styles */
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+}
+
+.thumbnail {
+    padding: 0;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+   border:6px;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+}
+
+/* Google Map styles */
+#map {
+	height: 400px;
+	width: 100%;
+}
+
+/* Campground show page delete button */
+.delete-form {
+	display: inline-block;
+}
+
+/* Flexbox grid fix */
+.flex-wrap {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+
