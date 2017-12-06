@@ -6,7 +6,7 @@ Website Eagle Eye Job bertujuan untuk memberikan informasi lowongan kerja secara
 ## Fitur-fitur di website kita:
 -	Login
 -	Register/sign up
--	Melihat lowongan pekerjaan terkini
+-	Melihat lowongan pekerjaan
 -	Mengomentari lowongan kerja yang tersedia
 -	Memberikan/memasukan postingan lowongan kerja
 -	Mengedit/delete postingan lowongan kerja sendiri
