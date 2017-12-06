@@ -15,6 +15,7 @@ Website Eagle Eye Job bertujuan untuk memberikan informasi lowongan kerja secara
 ## Cara Mengakses website Eagle Eye Job:
 - Melalui link url : eej.herokuapp.com
 - Download melalui git lalu extract file tersebut lalu buka terminal/cmd anda lalu menuju ke direktori file ini
+  eej = path file yang diextract
 
 ```
 cd eej
