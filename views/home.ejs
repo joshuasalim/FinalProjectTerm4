@@ -58,11 +58,18 @@
 				<li><a href="#menu" class="smoothScroll">ABOUT US</a></li>
 				<li><a href="#team" class="smoothScroll">TEAM</a></li>
 				<li><a href="#contact" class="smoothScroll">CONTACT</a></li>
-				 <% if(!currentUser){ %>
+				<!--  <% if(!currentUser){ %>
                     <li class="<%= typeof page !== 'undefined' && page === 'login' ? 'active' : '' %>"><a href="/login">LOGIN</a></li>
                     <li class="<%= typeof page !== 'undefined' && page === 'register' ? 'active' : '' %>"><a href="/register">SIGN UP</a></li>
                 <% } else { %>
                     <li><a href="#">HELLO <%= currentUser.username %></a></li>
+                    <li><a href="/logout">LOGOUT</a></li>
+                <% } %> -->
+                 <% if(!currentUser){ %>
+                    <li><a href="/login">LOGIN</a></li>
+          <li><a href="/register">SIGN UP</a></li>
+                <% } else { %>
+                    <li><a href="/users/<%=currentUser._id%>">HELLO <%= currentUser.username %></a></li>
                     <li><a href="/logout">LOGOUT</a></li>
                 <% } %>
 			</ul>
@@ -169,17 +176,16 @@
 			
 			<div class="inner_sec_grids_info_w3ls">
 				<div class="col-md-6 banner_bottom_left">
-					<h4>Employment opportunities for <span>Professionals</span></h4>
-					<p>Pellentesque convallis diam consequat magna vulputate malesuada. Cras a ornare elit. Nulla viverra pharetra sem, eget
-						pulvinar neque pharetra ac.</p>
-					<p>Lorem Ipsum convallis diam consequat magna vulputate malesuada. Cras a ornare elit. Nulla viverra pharetra sem, eget
-						pulvinar neque pharetra ac.</p>
-					<ul class="some_agile_facts">
+					
+					<p>Berdasarkan Badan Pusat Statistik (BPS) Provinsi Sumut menyimpulkan bahwa meningkatnya Jumlah pengangguran terbuka di Provinsi Sumatra Utara pada Februari 2017 mencapai 421 ribu orang, meningkat 30 ribu orang dibanding Agustus tahun 2016 yaitu sebanyak 391 ribu., inilah yang mendorong kita untuk membuat website Eagle Eye Job.
+
+Website Eagle Eye Job bertujuan untuk memberikan informasi lowongan kerja secara online, secara lengkap dan jelas.</p>
+					<!-- <ul class="some_agile_facts">
 						<li><span class="fa fa-briefcase" aria-hidden="true"></span><label>80</label> Corporate Programs</li>
 						<li><span class="fa fa-graduation-cap" aria-hidden="true"></span><label>49</label> Training Courses</li>
 						<li><span class="fa fa-user" aria-hidden="true"></span><label>88</label> Strategic Partners</li>
 						<li><span class="fa fa-line-chart" aria-hidden="true"></span><label>436</label> Companies We Helped</li>
-					</ul>
+					</ul> -->
 					<div class="clearfix"> </div>
 				</div>
 				<div class="col-md-6 banner_bottom_right">
@@ -217,19 +223,19 @@
 				<h3>Project Manager</h3>
 			</div>
 			<div class="col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.6s">
-				<img src="images/team22.jpg" class="img-responsive center-block" alt="team img">
+				<img src="images/jeff.jpg" class="img-responsive center-block" alt="team img">
 				<h4>Jeffrey Anderson</h4>
-				<h3>Pasta Specialist</h3>
+				<h3>Designer</h3>
 			</div>
 			<div class="col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.9s">
-				<img src="images/team33.jpg" class="img-responsive center-block" alt="team img">
+				<img src="images/rico.jpg" class="img-responsive center-block" alt="team img">
 				<h4>Rico Cahyadi</h4>
-				<h3>Baker</h3>
+				<h3>System Analyst</h3>
 			</div>
 			<div class="col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.9s">
-				<img src="images/team33.jpg" class="img-responsive center-block" alt="team img">
+				<img src="images/william.jpg" class="img-responsive center-block" alt="team img">
 				<h4>William</h4>
-				<h3>Baker</h3>
+				<h3>Documentator</h3>
 			</div>
 		</div>
 	</div>
@@ -274,29 +280,25 @@
 				<h2 class="heading">Contact Info.</h2>
 				<div class="ph">
 					<p><i class="fa fa-phone"></i> Phone</p>
-					<h4>061-465-9873</h4>
+					<h4>08123456789</h4>
 				</div>
 				<div class="address">
 					<p><i class="fa fa-map-marker"></i> Our Location</p>
-					<h4>Dagan 10/1M, Medan, Indonesia</h4>
+					<h4> Medan, Indonesia</h4>
 				</div>
+
+				<p><i class="glyphicon glyphicon-envelope"></i> Email</p>
+					
+				<h4>eagleeyejob@gmail.com</h4>
 			</div>
-			<div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
+			</div>
+			<!-- <div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
 				<h2 class="heading">Open Hours</h2>
 					<p>Sunday <span>10:30 AM - 10:00 PM</span></p>
 					<p>Mon-Fri <span>9:00 AM - 8:00 PM</span></p>
 					<p>Saturday <span>11:30 AM - 10:00 PM</span></p>
-			</div>
-			<div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
-				<h2 class="heading">Follow Us</h2>
-				<ul class="social-icon">
-					<li><a href="#" class="fa fa-facebook wow bounceIn" data-wow-delay="0.3s"></a></li>
-					<li><a href="#" class="fa fa-twitter wow bounceIn" data-wow-delay="0.6s"></a></li>
-					<li><a href="#" class="fa fa-behance wow bounceIn" data-wow-delay="0.9s"></a></li>
-					<li><a href="#" class="fa fa-dribbble wow bounceIn" data-wow-delay="0.9s"></a></li>
-					<li><a href="#" class="fa fa-github wow bounceIn" data-wow-delay="0.9s"></a></li>
-				</ul>
-			</div>
+			</div> -->
+			
 		</div>
 	</div>
 </footer>

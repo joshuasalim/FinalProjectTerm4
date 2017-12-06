@@ -78,16 +78,10 @@ http.get('/home', (req, res) =>{
 	res.render('home');
 });
 
-http.get('/events', (req, res) =>{
-	res.render('events');
-});
 
-http.get('/about', (req, res) =>{
-	res.render('about');
-});
 
 const PORT = process.env.PORT || 3000
 http.listen(PORT, () => {
-  console.log(`App listening on port ${PORT}`)
-  console.log('Have Fun')
+  console.log('Yeah Man')
+ 
 })

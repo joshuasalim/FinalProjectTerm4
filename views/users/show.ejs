@@ -1,0 +1,36 @@
+<% include ../partials/header %>
+
+
+<div class="row">
+<div class="roww">
+	<div class="col-md-4">
+			<h1><%= user.firstName + " " + user.lastName %></h1>
+		<div class="thumbnail">
+			<!-- <img align="left" class="fb-image-profile thumbnail" src="<%=user.image%>" onerror="this.src='https://myspace.com/common/images/user.png'" alt="Profile Picture"> -->
+			<div class="caption">Email : <a href="mailto:<%= user.email %>"><%= user.email %></a></div>
+		</div>
+		
+	</div>
+	<div class="col-md-8">
+		<h3><%= user.username %>'s post :</h3>
+		<% campgrounds.forEach(function(campground) { %>
+		<ul class="list-group">
+  <li class="list-group-item" color><a href="/campgrounds/<%= campground.id %>"><%= campground.name %></a></li>
+  </ul>
+  <% }); %>
+</div>
+		<div class="col-sm-9">
+		<div class="form-group">
+		<h4>NB : You can only delete your account</h4>
+              <form class="delete-form" action="/users/<%=user._id%>/<%=user.username%>?_method=DELETE" method="POST" >
+     			
+                <button class="btn btn-sm btn-danger">
+                  <span ><i class="glyphicon glyphicon-remove"></i></span> Delete Account
+                </button>
+         
+              </form> 
+            </div>
+            </div>
+</div>
+
+<% include ../partials/footer %>

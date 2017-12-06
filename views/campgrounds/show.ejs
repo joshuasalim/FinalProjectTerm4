@@ -1,23 +1,26 @@
 <% include ../partials/header %>
 <div class="row">
-  <div class="col-md-3">
+ <!--  <div class="col-md-3">
     <p class="lead"><%= campground.name %></p>
 
     <div id="map"></div>
-  </div>
+  </div> -->
   <div class="col-md-9">
     <div class="thumbnail">
-      <img class="img-responsive" src="<%= campground.image %>">
+      <img class="img-responsive" src="<%= campground.image %>" style="width: 50%;">
       <div class="caption-full">
         <h4 class="pull-right">
-          Salary: <%= campground.cost %>
+          Salary: Rp.<%= campground.cost %>
         </h4>
-        <h4><a><%=campground.name%></a></h4>
+        <h3><%=campground.name%></h3>
+        <h4><%= campground.location %></h4>
+
         <p><%= campground.description %></p>
         <p>
           <em>Submitted by: <a href="/users/<%= campground.author.id %>"><%= campground.author.username %></a>, <%= moment(campground.createdAt).fromNow() %></em>
         </p>
-        <% if(currentUser && campground.author.id.equals(currentUser._id) || currentUser && currentUser.isAdmin){ %>
+        <% if(currentUser && campground.author.id.equals(currentUser._id) || currentUser && currentUser._id.equals("5a26364cd134282d28772228")){ %>
+       
         <a class="btn btn-warning" href="/campgrounds/<%= campground._id %>/edit">Edit</a>
         <form action="/campgrounds/<%= campground._id %>?_method=DELETE" method="POST" class="delete-form">
           <button class="btn btn-danger">Delete</button>

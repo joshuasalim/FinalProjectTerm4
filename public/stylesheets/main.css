@@ -13,6 +13,10 @@ body {
   width: 50%;
   height: 50%;
 }
+.roww a {
+  color: #000;
+   ;
+}
 
 .footer {
   position: absolute;
@@ -112,12 +116,20 @@ h3.tittle {
   padding-bottom: 0px;
   padding-top: 20px;
 }
+.roww{
+  border:6px;
+
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+ 
+  padding-bottom: 0px;
+ 
+}
 .tab_grid {
   margin: 3em 0;
 }
 
 .team_work_agile {
-  padding : 100px ;
+  padding : 10% ;
   background: -webkit-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/banner1.jpg) no-repeat;
   background: -moz-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/banner1.jpg) no-repeat;
   background: -ms-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/banner1.jpg) no-repeat;
@@ -231,6 +243,8 @@ h3.tittle {
   background-color: #f5f5f5;
   padding-bottom: 0px;
 }
+
+
 
 .flex-wrap {
    border:6px;

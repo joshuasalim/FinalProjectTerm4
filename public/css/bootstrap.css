@@ -1588,7 +1588,10 @@ pre code {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
+
 }
+
+
 @media (min-width: 768px) {
   .container {
     width: 750px;

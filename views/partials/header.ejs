@@ -12,8 +12,8 @@
     
     <link href="static/font-awesome.min.css" rel="stylesheet">
   </head>
-  <body>
-  <section class="navbar navbar-default navbar-fixed-top" role="navigation">
+<body>
+  <section class="navbar navbar-default navbar-expand-lg sticky" role="navigation">
   <div class="container">
     <div class="navbar-header">
       <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -42,10 +42,10 @@
         <li><a href="/home#contact" class="smoothScroll">CONTACT</a></li>
          <ul class="nav navbar-nav navbar-right">
         <% if(!currentUser){ %>
-                    <li class="<%= typeof page !== 'undefined' && page === 'login' ? 'active' : '' %>"><a href="/login">LOGIN</a></li>
-                    <li class="<%= typeof page !== 'undefined' && page === 'register' ? 'active' : '' %>"><a href="/register">SIGN UP</a></li>
+                    <li><a href="/login">LOGIN</a></li>
+          <li><a href="/register">SIGN UP</a></li>
                 <% } else { %>
-                    <li><a href="#">HELLO <%= currentUser.username %></a></li>
+                    <li><a href="/users/<%=currentUser._id%>">HELLO <%= currentUser.username %></a></li>
                     <li><a href="/logout">LOGOUT</a></li>
                 <% } %>
 

@@ -10,13 +10,38 @@
 </div>
 
 
+
             <!--  <h1>LOWONGAN KERJA</h1>
           -->
           <div class="container">
            <p class="text-right">
-            <a class="btn btn-primary btn-lg" href="/campgrounds/new">Add New Loker!</a>
+            <a class="btn btn-primary btn-lg" href="/campgrounds/new">Add New Job!</a>
           </p>
         </div>
+       
+
+        <!--   <form action="#" method="post">
+            <input type="search" name="Search" placeholder="Enter Company Name..." required="">
+            <input type="submit" value="Search">
+          </form> -->
+
+          <div class="container">
+
+        <div class="col-sm-5 ">
+
+        <form action="/campgrounds/search" method="GET">
+          <div class="input-group">
+            <input type="text"  class="form-control input-sm" name="search" placeholder="Search" />
+            <span class="input-group-btn">
+              <button class="btn btn-default btn-sm" type="submit"><span class="glyphicon glyphicon-search"></span>  
+              </button>
+            </span>
+          </div>
+          </form>
+          </div>
+          </div>
+       
+       
 
             <!--   <form action="/campgrounds" method="GET" class="form-inline" id="campground-search">
                 <div class="form-groupindex">
@@ -42,15 +67,21 @@
             </div>
         <% }); %>
       </div> -->
+
       <div class="container">
-        <ul id="myTab" class="nav nav-tabs" role="tablist">
+    
+      <br>
+       <!--  <ul id="myTab" class="nav nav-tabs" role="tablist">
           <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">JOBS</a></li>
 
 
-        </ul>
-        <div class="row text-center flex-wrap" id="campground-grid">
+        </ul> -->
+
+  
+   
+       <div class="panel panel-default" id="campground-grid">
           <% campgrounds.forEach(function(campground){ %>
-          <div class="tab_grid">
+         <div class="panel-body">
             <div class="col-sm-3 loc_1">
 
 
@@ -60,9 +91,11 @@
             <div class="col-md-9 location_box1">
               <h4 class="col-xs-12" align="left"><a href="/campgrounds/<%= campground._id %>"><%= campground.name %> </a></h4>
               <p align="left" class="col-sm-12">Location : <%= campground.location %></p>
+               <p align="left" class="col-sm-12">Salary : Rp.<%= campground.cost %></p>
 
               </div>
             </div>
+            <hr>
             <% }); %>
           </div>
         </div>

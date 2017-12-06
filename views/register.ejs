@@ -1,31 +1,46 @@
 <% include ./partials/header %>
-    <div class="row">
+    <div class="roww">
         <header class="jumbotron hero">
-         <div class="container-center">
+       <!--   <div class="container-center"> -->
         <h1 style="text-align: center">Register Form</h1>
-        <div style="width: 30%; margin: 65px auto;">
+        <div style="width: 30%; margin: 40px auto;">
             <form action="/register" method="post">
                 <div class="form-group">
-                    <input class="form-control" type="text" name="username" placeholder="Username">
+                 <label for="username" class="control-label">Username </label>
+                    <input class="form-control" type="text" name="username" placeholder="Username" required/>
                 </div>
                 <div class="form-group">
-                    <input class="form-control" type="password" name="password" placeholder="Password">
+                <label for="password" class="control-label">Password </label>
+                    <input class="form-control" type="password" name="password" placeholder="Password" required/>
                 </div>
+                 <div class="form-group">
+          <label for="password" class="control-label">Confirm Password </label>
+          <div class="form-group">
+            
+            <input type="password" class="form-control" name="confirmpassword" id="password"  placeholder="Confirm Password" required/>
+          </div>
+        </div>
+        <label for="firstname" class="control-label">First Name </label>
                 <div class="form-group">
-                    <input class="form-control" type="text" name="firstName" placeholder="First Name">
+                    <input class="form-control" type="text" name="firstName" placeholder="First Name" required/>
                 </div>
+                <label for="lastname" class="control-label">Last Name </label>
                 <div class="form-group">
-                    <input class="form-control" type="text" name="lastName" placeholder="Last Name">
+                    <input class="form-control" type="text" name="lastName" placeholder="Last Name" required/>
                 </div>
+                <label for="email" class="control-label">Email </label>
                 <div class="form-group">
-                    <input class="form-control" type="email" name="email" placeholder="Email">
+                    <input class="form-control" type="email" name="email" placeholder="Email" required/>
                 </div>
-              <!--   <div class="form-group">
-                    <input class="form-control" type="text" name="avatar" placeholder="avatar url">
-                </div> -->
-<!--                 <div class="form-group">
-                    <input class="form-control" type="text" name="adminCode" placeholder="admin code">
-                </div> -->
+          <!--    <div class="form-group">
+          <label for="confirm" class="control-label">Image</label>
+          <div class="form-group">
+           
+           
+              <input type="file" class="form-control" id="image" name="image" accept="image/*" />
+          
+          </div>
+        </div> -->
                 <div class="form-group">
                     <button class="btn btn-lg btn-primary btn-block">Sign Up!</button>
                 </div>

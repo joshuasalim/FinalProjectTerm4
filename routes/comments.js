@@ -37,7 +37,7 @@ router.post("/",middleware.isLoggedIn,function(req, res){
                campground.comments.push(comment);
                campground.save();
                console.log(comment);
-               req.flash('success', 'Feedback/Comment Posted');
+               req.flash('success', 'Comment Posted');
                res.redirect('/campgrounds/' + campground._id);
            }
         });
@@ -80,12 +80,33 @@ router.delete("/:commentId",middleware.checkUserComment, function(req, res){
               if(err){ 
                 console.log(err)
               } else {
-                req.flash('error', 'Feedback/Comment deleted!');
+                req.flash('error', 'Comment deleted!');
                 res.redirect("/campgrounds/" + req.params.id);
               }
             });
         }
     });
 });
+
+function checkOwnership(req,res,next){
+    // check if the user is logged in
+    if(req.isAuthenticated()){
+      Comment.findById(req.params.commentId ,function(err,foundComment){
+        if(err){
+          res.redirect("back");
+        }else{
+        // is the user own the campgrounds?
+        if(foundComment.author.id.equals(req.user._id) || req.user._id.equals("5a26364cd134282d28772228")){
+          // tidak bisa pakai === karena satu object satu string
+          next();
+        }else{
+          res.redirect("back");
+        }
+      }
+    })
+    }else{
+      res.redirect("/login");
+    }
+  }
 
 module.exports = router;
